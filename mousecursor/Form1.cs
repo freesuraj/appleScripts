@@ -37,11 +37,11 @@ namespace mousecursor
         {
             if (e.Button == MouseButtons.Left)
             {
-                
+                MessageBox.Show("Test Left Click");
             }
             if (e.Button == MouseButtons.Right)
             {
-                
+                MessageBox.Show("Test Right Click");
             }
         }
 
