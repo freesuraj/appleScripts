@@ -20,8 +20,8 @@ SWEAR[9]=Ghwaaaaak
 randSwear=$[$RANDOM % ${#SWEAR[@]}]
 swear=${SWEAR[$randSwear]}
 
-caption="${swear}\n ${1} \n(#Eeehattack)"
+caption="${swear}\n ${1} \n(#EeeehAttack #LAPS)"
 randCol=$[$RANDOM % ${#COLOR[@]}]
 color=${COLOR[$randCol]}
-/usr/local/bin/convert -background $color  -fill white  -pointsize 60 -size 400x400 -gravity Center  caption:"${caption}" $HOME/Desktop/test.jpeg 
+/usr/local/bin/convert -background $color  -fill white  -pointsize 40 -size 400x400 -gravity Center  caption:"${caption}" $HOME/Desktop/test.jpeg 
 /usr/local/bin/copyq write image/jpeg - < $HOME/Desktop/test.jpeg && /usr/local/bin/copyq select 0
