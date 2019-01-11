@@ -20,7 +20,7 @@ SWEAR[9]=Ghwaaaaak
 randSwear=$[$RANDOM % ${#SWEAR[@]}]
 swear=${SWEAR[$randSwear]}
 
-caption="${swear}\n ${1} \n(#Eeehattack)"
+caption="${swear}\n ${1} \n#SayNoToWA"
 randCol=$[$RANDOM % ${#COLOR[@]}]
 color=${COLOR[$randCol]}
 /usr/local/bin/convert -background $color  -fill white  -pointsize 60 -size 400x400 -gravity Center  caption:"${caption}" $HOME/Desktop/test.jpeg 
